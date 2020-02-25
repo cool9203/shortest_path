@@ -1,7 +1,7 @@
 #! python3
 
 
-
+#load txt file to martix
 def load_data(path):
     matrix = list()
     with open(path, "r") as f:
@@ -13,6 +13,20 @@ def load_data(path):
             matrix.append(temp)
     return matrix
 
+"""
+description:
+    can get shortest path with n to o.
+parameter:
+    matrix is graph.
+    v is list, you should input "list(0 for _ range(count))".
+    n is point number.
+    o is point number.
+
+return:
+    [[path_1], [path_2], ....]
+    **path_1 and path_2 is list.
+    **path_1 ex: [1, 2, 3]. this is 1->2->3
+"""
 
 def shortest_path(matrix, v, n, o):
     path = list()
